@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-jops:
+jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
