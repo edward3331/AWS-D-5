@@ -26,7 +26,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
 
       - name: S3 기존 파일들 삭제 후 새로 업로드
-        run: 
+        run: |
           aws s3 rm --recursive s3://prod-aws-d-5
           aws s3 cp ./dist s3://prod-aws-d-5/ --recursive
 
